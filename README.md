@@ -1,6 +1,6 @@
 # 🚀 Projeto NoSQL IoT - Engenharia de Dados
 
-[![CI](https://github.com/SEU_USUARIO/projeto-nosql-iot/actions/workflows/python-pipeline.yml/badge.svg)](https://github.com/SEU_USUARIO/projeto-nosql-iot/actions)
+[![CI](https://github.com/SEU_USUARIO/projeto-nosql-iot/actions/workflows/python-pipeline.yml/badge.svg)](https://github.com/Adrianogvs/projeto-nosql-iot/actions)
 
 Este projeto simula um cenário real da Petrobras, onde sensores IoT monitoram bombas e compressores em plataformas offshore. Os dados são enviados como documentos JSON e armazenados em um banco NoSQL (MongoDB). O pipeline trata, transforma e armazena os dados no formato otimizado (Parquet), pronto para análise.
 
