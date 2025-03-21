@@ -6,6 +6,8 @@ import sys
 # Definir encoding UTF-8 para evitar erro no Windows
 sys.stdout.reconfigure(encoding='utf-8')
 
+
+
 # Caminhos dos arquivos
 CAMINHO_JSON = Path("/opt/airflow/data/raw/sensores_simulados.json")
 PASTA_PROCESSADOS = Path("/opt/airflow/data/processed/")
@@ -52,8 +54,10 @@ def salvar_dataframe(df):
     print(f"[SALVO] Arquivo CSV: {CAMINHO_CSV}")
     print(f"[SALVO] Arquivo Parquet: {CAMINHO_PARQUET}")
 
+
 if __name__ == "__main__":
     # Executando o fluxo de extração e salvamento
     dados_json = carregar_dados()
     df_sensores = converter_para_dataframe(dados_json)
     salvar_dataframe(df_sensores)
+
