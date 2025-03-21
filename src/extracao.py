@@ -7,8 +7,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Caminhos dos arquivos
-CAMINHO_JSON = Path("data/raw/sensores_simulados.json")
-PASTA_PROCESSADOS = Path("data/processed/")
+CAMINHO_JSON = Path("/opt/airflow/data/raw/sensores_simulados.json")
+PASTA_PROCESSADOS = Path("/opt/airflow/data/processed/")
 CAMINHO_CSV = PASTA_PROCESSADOS / "sensores_extraidos.csv"
 CAMINHO_PARQUET = PASTA_PROCESSADOS / "sensores_extraidos.parquet"
 

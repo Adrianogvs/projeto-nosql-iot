@@ -1,49 +1,49 @@
 [
   {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 83.45,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 69.18,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 52.44,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
     "plataforma": "Plataforma C",
     "equipamento": "SensorBox 3",
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 60.02,
+        "valor": 61.95,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 64.11,
+        "valor": 26.11,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 83.42,
+        "valor": 21.84,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 12.78,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 11.48,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 78.5,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
@@ -53,333 +53,309 @@
     "sensores": [
       {
         "tipo": "temperatura",
+        "valor": 39.44,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 50.51,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 47.77,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 85.19,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 19.14,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 20.83,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 99.54,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 45.34,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 97.39,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 39.06,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 79.37,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 70.43,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 29.94,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 47.4,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 86.91,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 96.44,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 33.59,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 61.0,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 83.64,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 98.86,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 69.63,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 86.34,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 37.62,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 52.07,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 25.47,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 96.56,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 38.13,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 50.3,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 92.15,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 57.08,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 75.57,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 54.91,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 91.22,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 13.1,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 73.98,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 88.57,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 75.76,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
         "valor": 71.32,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 60.7,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 91.68,
+        "valor": 56.49,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.828920+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 44.27,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 71.23,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 79.89,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 27.79,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 38.48,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 88.63,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 24.56,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 20.91,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 71.32,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 22.13,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 37.54,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 74.07,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 26.1,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 44.41,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 60.78,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 28.01,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 11.96,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 26.14,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 87.55,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 59.89,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 48.49,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 42.0,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 44.69,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 16.4,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 28.94,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 52.21,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 59.12,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 38.51,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 58.98,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 31.99,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 97.12,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 18.25,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 85.24,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 20.7,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 97.14,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 79.2,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 20.53,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 37.93,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 60.36,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
@@ -389,477 +365,21 @@
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 99.18,
+        "valor": 98.84,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 47.31,
+        "valor": 68.56,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 70.16,
+        "valor": 21.45,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 55.28,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 57.13,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 31.45,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 54.77,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 47.78,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 64.84,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 13.57,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 38.29,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 26.19,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 97.07,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 28.7,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 53.01,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 95.58,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 44.21,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 12.3,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 24.44,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 75.5,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 85.4,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 44.99,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 45.42,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 19.34,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 29.74,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 73.71,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 33.46,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 78.8,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 35.61,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 19.34,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 64.61,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 45.26,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 24.4,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 58.78,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 84.07,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 59.34,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 17.66,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 73.36,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 77.34,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 23.52,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 66.12,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 16.63,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 76.62,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 25.71,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 89.3,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 48.88,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 80.14,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 56.68,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 81.43,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 87.57,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 97.75,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 59.67,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 87.8,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 53.92,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 64.25,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 84.77,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 38.05,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 41.85,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 97.18,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 70.94,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
@@ -869,189 +389,45 @@
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 39.71,
+        "valor": 25.51,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 73.27,
+        "valor": 24.01,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 32.87,
+        "valor": 48.87,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 58.24,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 62.85,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 74.18,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
   {
     "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 93.41,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 42.2,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 35.54,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 32.51,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 59.72,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 69.47,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 1",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 66.09,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 60.7,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 44.68,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
     "equipamento": "SensorBox 2",
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 92.25,
+        "valor": 28.71,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 92.93,
+        "valor": 88.7,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 43.61,
+        "valor": 53.61,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 2",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 72.22,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 46.57,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 42.71,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma A",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 62.36,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 82.79,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 66.77,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
@@ -1061,69 +437,93 @@
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 27.11,
+        "valor": 85.56,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 65.65,
+        "valor": 63.7,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 40.49,
+        "valor": 60.68,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 49.13,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 76.01,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 27.22,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 31.28,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 19.08,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 80.04,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
   {
     "plataforma": "Plataforma C",
-    "equipamento": "SensorBox 3",
-    "sensores": [
-      {
-        "tipo": "temperatura",
-        "valor": 26.81,
-        "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "umidade",
-        "valor": 21.02,
-        "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      },
-      {
-        "tipo": "pressao",
-        "valor": 74.97,
-        "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
-      }
-    ]
-  },
-  {
-    "plataforma": "Plataforma B",
     "equipamento": "SensorBox 1",
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 22.68,
+        "valor": 24.69,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 72.02,
+        "valor": 69.12,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 67.58,
+        "valor": 41.69,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
@@ -1133,21 +533,93 @@
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 73.72,
+        "valor": 30.9,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 38.11,
+        "valor": 82.5,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 11.57,
+        "valor": 89.34,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 99.78,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 52.65,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 72.12,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 74.65,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 78.79,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 86.24,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 62.88,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 98.98,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 12.64,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
@@ -1157,21 +629,453 @@
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 95.74,
+        "valor": 68.9,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 20.52,
+        "valor": 77.09,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 91.31,
+        "valor": 58.18,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 56.56,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 46.44,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 83.65,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 89.51,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 32.15,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 74.19,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 31.3,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 29.75,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 30.28,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 31.36,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 23.69,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 86.77,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 35.99,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 12.4,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 58.21,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 70.67,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 68.78,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 14.12,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 77.96,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 40.54,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 57.08,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 64.71,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 76.92,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 55.2,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 67.43,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 10.06,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 23.53,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 81.56,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 11.71,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 77.71,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 83.45,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 60.97,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 14.29,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 17.87,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 17.68,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 30.99,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 77.22,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 51.56,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 76.02,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 81.52,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 17.9,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 37.8,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 97.35,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 99.39,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 55.47,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 82.93,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 94.34,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 76.73,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 58.03,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 89.77,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 72.4,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 52.07,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 53.58,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 61.91,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   },
@@ -1181,21 +1085,117 @@
     "sensores": [
       {
         "tipo": "temperatura",
-        "valor": 43.09,
+        "valor": 88.21,
         "unidade": "C",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "umidade",
-        "valor": 77.54,
+        "valor": 41.93,
         "unidade": "%",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       },
       {
         "tipo": "pressao",
-        "valor": 11.15,
+        "valor": 47.1,
         "unidade": "Pa",
-        "timestamp": "2025-03-21T19:49:04.829919+00:00"
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma B",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 96.56,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 73.39,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 87.67,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma A",
+    "equipamento": "SensorBox 3",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 31.05,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 68.2,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 14.91,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 2",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 58.91,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 29.0,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 71.0,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      }
+    ]
+  },
+  {
+    "plataforma": "Plataforma C",
+    "equipamento": "SensorBox 1",
+    "sensores": [
+      {
+        "tipo": "temperatura",
+        "valor": 86.28,
+        "unidade": "C",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "umidade",
+        "valor": 89.18,
+        "unidade": "%",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
+      },
+      {
+        "tipo": "pressao",
+        "valor": 23.96,
+        "unidade": "Pa",
+        "timestamp": "2025-03-21T20:20:50.280626+00:00"
       }
     ]
   }
