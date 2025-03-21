@@ -2,6 +2,10 @@ import json
 import pandas as pd
 from pathlib import Path
 import sys
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Definir encoding UTF-8 para evitar erro no Windows
 sys.stdout.reconfigure(encoding='utf-8')
@@ -13,8 +17,8 @@ CAMINHO_CSV = PASTA_PROCESSADOS / "sensores_extraidos.csv"
 CAMINHO_PARQUET = PASTA_PROCESSADOS / "sensores_extraidos.parquet"
 
 def carregar_dados():
-    """Lê o arquivo JSON e retorna os dados como uma lista de dicionários."""
     if not CAMINHO_JSON.exists():
+        logger.error(f"Arquivo {CAMINHO_JSON} não encontrado!")
         raise FileNotFoundError(f"[ERRO] Arquivo {CAMINHO_JSON} não encontrado!")
 
     with open(CAMINHO_JSON, "r", encoding="utf-8") as f:

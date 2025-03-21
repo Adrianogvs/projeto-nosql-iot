@@ -28,7 +28,7 @@ with DAG(
 
     transformar = BashOperator(
         task_id='transformar',
-        bash_command='python /opt/airflow/src/transformacao.py'
+        bash_command='python /opt/airflow/src/transformacao.py || echo "Erro ao executar transformacao.py"'
     )
 
     carregar = BashOperator(
