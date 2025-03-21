@@ -1,0 +1,36 @@
+name: CI - Projeto NoSQL IoT
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Clonar o repositório
+      uses: actions/checkout@v4
+
+    - name: 🐍 Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: 📦 Instalar dependências
+      run: |
+        python -m pip install --upgrade pip
+        pip install pandas pyarrow
+
+    - name: ⚙️ Executar pipeline completo
+      run: |
+        python scripts/gerar_dados_json.py
+        python src/extracao.py
+        python src/transformacao.py
+        python src/carga.py
+
+    - name: ✅ Finalizado
+      run: echo "CI executado com sucesso!"
