@@ -32,5 +32,12 @@ jobs:
         python src/transformacao.py
         python src/carga.py
 
-    - name: ✅ Finalizado
+    - name: ✅ Rodar testes com Pytest
+      run: |
+        pip install pytest
+        pytest tests/
+
+    - name: 🟢 Finalizado
       run: echo "CI executado com sucesso!"
+
+
