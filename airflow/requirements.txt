@@ -30,6 +30,7 @@ colorama==0.4.6
 colorlog==6.9.0
 ConfigUpdater==3.2
 connexion==2.14.2
+cramjam==2.9.1
 cron-descriptor==1.4.5
 croniter==6.0.0
 cryptography==44.0.2
@@ -37,6 +38,7 @@ Deprecated==1.2.18
 dill==0.3.9
 dnspython==2.7.0
 email_validator==2.2.0
+fastparquet==2024.11.0
 Flask==2.2.5
 Flask-AppBuilder==4.5.3
 Flask-Babel==2.0.0
@@ -100,6 +102,7 @@ prison==0.2.1
 propcache==0.3.0
 protobuf==5.29.4
 psutil==7.0.0
+pyarrow==19.0.1
 pycparser==2.22
 Pygments==2.19.1
 PyJWT==2.10.1

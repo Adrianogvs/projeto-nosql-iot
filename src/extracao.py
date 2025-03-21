@@ -49,7 +49,7 @@ def salvar_dataframe(df):
     PASTA_PROCESSADOS.mkdir(parents=True, exist_ok=True)
     
     df.to_csv(CAMINHO_CSV, index=False)
-    df.to_parquet(CAMINHO_PARQUET, index=False)
+    df.to_parquet(CAMINHO_PARQUET, index=False, engine='pyarrow')
     
     print(f"[SALVO] Arquivo CSV: {CAMINHO_CSV}")
     print(f"[SALVO] Arquivo Parquet: {CAMINHO_PARQUET}")

@@ -38,6 +38,7 @@ services:
       - ./src:/opt/airflow/src
       - ./data:/opt/airflow/data
       - ./data/raw:/opt/airflow/data/raw
+      - ./data/processed:/opt/airflow/data/processed
     command: bash -c "airflow users create --username admin --password admin --firstname Adriano --lastname VS --role Admin --email admin@admin.com && airflow webserver"
 
   scheduler:
@@ -51,7 +52,8 @@ services:
       - ./airflow/scripts:/opt/airflow/scripts
       - ./src:/opt/airflow/src
       - ./data:/opt/airflow/data
-      - ./data/raw:/opt/airflow/data/raw 
+      - ./data/raw:/opt/airflow/data/raw
+      - ./data/processed:/opt/airflow/data/processed
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow

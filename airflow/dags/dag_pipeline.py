@@ -36,5 +36,4 @@ with DAG(
         bash_command='python /opt/airflow/src/carga.py'
     )
 
-    # 🔹 Garantindo que o JSON seja gerado antes da extração
     gerar_json >> extrair >> transformar >> carregar
