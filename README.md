@@ -1,188 +1,160 @@
-# 🚀 Projeto NoSQL IoT - Engenharia de Dados
+# Projeto NoSQL IoT - Engenharia de Dados com Apache Airflow + Docker
 
-[![CI](https://github.com/SEU_USUARIO/projeto-nosql-iot/actions/workflows/python-pipeline.yml/badge.svg)](https://github.com/Adrianogvs/projeto-nosql-iot/actions)
-
-Este projeto simula um cenário real da Petrobras, onde sensores IoT monitoram bombas e compressores em plataformas offshore. Os dados são enviados como documentos JSON e armazenados em um banco NoSQL (MongoDB). O pipeline trata, transforma e armazena os dados no formato otimizado (Parquet), pronto para análise.
+Este projeto simula um caso real da Petrobras: sensores IoT monitoram bombas e compressores em plataformas offshore. Esses dados chegam em JSON, são tratados com Python e orquestrados com Apache Airflow, e salvos como Parquet para análise.
 
 ---
 
-## 📁 Estrutura do Projeto
+## O que você precisa ter instalado?
+
+### 1. [Python 3.12+](https://www.python.org/downloads/)
+
+### 2. [Git](https://git-scm.com/)
+
+### 3. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+### 4. [Visual Studio Code (VSCode)](https://code.visualstudio.com/) (opcional, mas recomendado)
+
+---
+
+## Clonar o projeto
+
+Abra o terminal e digite:
+
+```bash
+git clone https://github.com/SEU_USUARIO/projeto-nosql-iot.git
+cd projeto-nosql-iot
+```
+
+---
+
+## Criar ambiente virtual e instalar as dependências
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate   # Windows
+# source .venv/bin/activate   # Linux/macOS
+
+pip install -r airflow/requirements.txt
+```
+
+---
+
+## Subir o Apache Airflow com Docker
+
+### 1. Rode os containers:
+
+```bash
+docker-compose up -d
+```
+
+### 2. Acesse o Airflow no navegador:
+
+```
+http://localhost:8080
+```
+
+- **Usuário**: `admin`
+- **Senha**: `admin`
+
+---
+
+## Estrutura de Pastas
 
 ```bash
 projeto-nosql-iot/
-├── data/                    # Dados simulados e tratados
-│   ├── raw/                # Arquivos JSON gerados (ex: sensores_simulados.json)
-│   ├── processed/          # Arquivos intermediários em CSV/Parquet
+├── .github/
+│   └── workflows/
+│       └── python-pipeline.yml         # CI/CD com GitHub Actions
+├── airflow/
+│   ├── dags/
+│   │   └── dag_pipeline.py             # DAG do Airflow
+│   ├── logs/                           # Logs do Airflow
+│   ├── plugins/                        # Plugins (se necessário)
+│   ├── scripts/
+│   │   └── gerar_dados_json.py         # Script para gerar JSON simulado
+│   └── requirements.txt                # Requisitos do Airflow
+├── data/
+│   ├── lake/
+│   │   └── sensores_lake.parquet       # Arquivo final
+│   ├── processed/
 │   │   ├── sensores_extraidos.csv
 │   │   ├── sensores_extraidos.parquet
 │   │   ├── sensores_transformados.csv
 │   │   └── sensores_transformados.parquet
-│   └── lake/               # Resultado final no formato Parquet
-│       └── sensores_lake.parquet
-│
-├── src/                    # Código principal do pipeline
-│   ├── extracao.py         # Lê o JSON e transforma em DataFrame
-│   ├── transformacao.py    # Limpa, padroniza e transforma os dados
-│   ├── carga.py            # Salva os dados no formato final
-│   └── pipeline.py         # Executa todas as etapas em sequência
-│
-├── scripts/                # Scripts utilitários
-│   └── gerar_dados_json.py # Geração de dados simulados
-│
-├── tests/                  # Testes automatizados
-│   └── test_transformacao.py # Testa a função de transformação de dados
-│
-├── dags/                   # (Opcional) DAG para execução no Apache Airflow
-│   └── dag_iot_airflow.py
-│
-├── .github/workflows/      # Configuração do CI/CD com GitHub Actions
-│   └── python-pipeline.yml
-│
-├── requirements.txt        # Dependências do projeto
-├── README.md               # Documentação do projeto
-└── .env.example            # Exemplo de variáveis de ambiente
+│   └── raw/
+│       └── sensores_simulados.json     # Dados brutos simulados
+├── notebooks/
+│   └── exploracao_inicial.ipynb        # Análises exploratórias
+├── src/
+│   ├── __init__.py
+│   ├── carga.py                        # Carrega dados finais
+│   ├── extracao.py                     # Extrai dados do JSON
+│   ├── pipeline.py                     # Executa pipeline completo
+│   └── transformacao.py                # Transforma os dados extraídos
+├── tests/
+│   └── test_transformacao.py           # Testes unitários da transformação
+├── docker-compose.yml                 # Configuração do Docker
+└── README.md                          # Documentação principal
 ```
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+## Executar o pipeline (via Airflow)
 
-- Python 3.12
-- MongoDB (estrutura NoSQL simulada)
-- Pandas e PyArrow (Parquet)
-- Apache Airflow (orquestração)
-- Pytest (testes)
-- GitHub Actions (CI/CD)
+1. Acesse o navegador em `http://localhost:8080`
+2. Ative a DAG `pipeline_iot_nosql`
+3. Clique no botão ▶️ para rodar manualmente
+4. Veja o gráfico com as etapas:
 
 ---
 
-## 🧩 Etapas do Pipeline - Passo a Passo
-
-### 1. **Geração de Dados Simulados** (`scripts/gerar_dados_json.py`)
-Gera um arquivo JSON com dados de sensores simulando leituras de temperatura, pressão e vibração em plataformas offshore.
+## Executar manualmente pelo terminal (sem Airflow)
 
 ```bash
-python scripts/gerar_dados_json.py
-```
-
-> 📄 Gera o arquivo `data/raw/sensores_simulados.json`
-
----
-
-### 2. **Extração dos Dados** (`src/extracao.py`)
-Carrega o JSON com as leituras e transforma em um DataFrame Pandas, salvando também em CSV e Parquet na pasta `processed`.
-
-```bash
-python src/extracao.py
-```
-
-> 📁 Salva: `data/processed/sensores_extraidos.csv` e `.parquet`
-
----
-
-### 3. **Transformação dos Dados** (`src/transformacao.py`)
-Aplica as regras de padronização e limpeza:
-- Remove nulos
-- Converte `timestamp` para datetime
-- Padroniza nomes dos sensores
-- Converte valores para float
-
-```bash
-python src/transformacao.py
-```
-
-> 📁 Salva: `data/processed/sensores_transformados.csv` e `.parquet`
-
----
-
-### 4. **Carga no Data Lake** (`src/carga.py`)
-Carrega o arquivo transformado e salva o resultado final no Data Lake local em formato Parquet.
-
-```bash
-python src/carga.py
-```
-
-> 📁 Salva: `data/lake/sensores_lake.parquet`
-
----
-
-### 5. **Pipeline Sequencial** (`src/pipeline.py`)
-Executa automaticamente as etapas anteriores em sequência.
-
-```bash
+# Rodar o pipeline completo com Python:
 python src/pipeline.py
 ```
 
 ---
 
-### 6. **Testes Automatizados** (`tests/test_transformacao.py`)
-Testa se a transformação dos dados funciona corretamente, usando dados simulados.
+## Rodar os testes
 
 ```bash
 # Windows
 $env:PYTHONPATH="." ; pytest tests/
 
-# Linux/Mac
+# Linux/macOS
 PYTHONPATH=. pytest tests/
 ```
 
 ---
 
-### 7. **CI/CD com GitHub Actions** (`.github/workflows/python-pipeline.yml`)
-Executa automaticamente:
-- Instalação das dependências
-- Execução do pipeline completo
-- Execução dos testes com Pytest
+## Prints do Funcionamento
 
-> ✅ Rodado em cada push/pull request na branch `main`
+### Docker Desktop com os containers ativos:
+![docker](./img/docker_containers.png)
 
----
-
-## ▶️ Como Executar Localmente
-
-```bash
-# Clonar o repositório
-git clone https://github.com/SEU_USUARIO/projeto-nosql-iot.git
-cd projeto-nosql-iot
-
-# Criar ambiente virtual
-python -m venv .venv
-.venv\Scripts\activate
-
-# Instalar dependências
-pip install -r requirements.txt
-
-# Rodar pipeline completo
-python src/pipeline.py
-```
+### DAG executada com sucesso no Airflow:
+![airflow](./img/airflow_dag_pipeline.png)
 
 ---
 
-## ✅ Rodar os testes manualmente
+## Possíveis Evoluções
 
-```bash
-# No Windows (PowerShell)
-$env:PYTHONPATH="." ; pytest tests/
-
-# No Linux/Mac
-PYTHONPATH=. pytest tests/
-```
+- Integração com MongoDB Atlas real
+- Deploy na nuvem (S3 / Azure Blob)
+- Visualização com Streamlit ou Power BI
+- Kafka para streaming de dados
 
 ---
 
-## 🧠 Possíveis Evoluções
+## Autor
 
-- Conectar com MongoDB Atlas real
-- Integração com Apache Kafka
-- Dashboard com Streamlit
-- Salvar Parquet na nuvem (S3, Azure Blob)
-- Deploy do Airflow em Docker
+**Adriano Vilela**\
+Engenheiro de Dados em formação | Pythonista em construção\
+[LinkedIn](https://linkedin.com/in/adrianogvs) • [GitHub](https://github.com/Adrianogvs)
 
 ---
 
-## 👨‍💻 Autor
-
-**Adriano V. S.**  
-Engenheiro de Dados | Pythonista em Construção  
-[LinkedIn](https://linkedin.com/in/SEU_USUARIO) • [GitHub](https://github.com/SEU_USUARIO)
+Pronto! Agora é só apertar o play na DAG e ver a mágia acontecer!
 
