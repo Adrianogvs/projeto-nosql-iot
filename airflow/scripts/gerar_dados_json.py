@@ -9,14 +9,14 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # Configurações
-NUM_REGISTROS = 1000
+NUM_REGISTROS = 10000
 TIPOS_SENSORES = ["temperatura", "umidade", "pressao"]
 UNIDADES = {"temperatura": "C", "umidade": "%", "pressao": "Pa"}
 PLATAFORMAS = ["Plataforma A", "Plataforma B", "Plataforma C"]
 EQUIPAMENTOS = ["SensorBox 1", "SensorBox 2", "SensorBox 3"]
 
 # Caminho do arquivo de saída
-CAMINHO_ARQUIVO = Path("data/raw/sensores_simulados.json")
+CAMINHO_ARQUIVO = Path("/opt/airflow/data/raw/sensores_simulados.json")
 CAMINHO_ARQUIVO.parent.mkdir(parents=True, exist_ok=True)
 
 def gerar_registro():
