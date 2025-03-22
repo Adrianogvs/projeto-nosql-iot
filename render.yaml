@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: airflow-pipeline
+    env: docker
+    plan: free
+    repo: https://github.com/Adrianogvs/projeto-nosql-iot
+    branch: main
+    dockerfilePath: Dockerfile
+    buildFilter:
+      paths: ["Dockerfile", "airflow/**", "src/**", "requirements.txt"]
