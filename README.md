@@ -5,30 +5,27 @@ Este projeto simula um caso real da Petrobras: sensores IoT monitoram bombas e c
 
 ---
 
-## O que você precisa ter instalado?
+## 📂 O que você precisa ter instalado?
 
 ### 1. [Python 3.12+](https://www.python.org/downloads/)
-
 ### 2. [Git](https://git-scm.com/)
-
 ### 3. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-
 ### 4. [Visual Studio Code (VSCode)](https://code.visualstudio.com/) (opcional, mas recomendado)
 
 ---
 
-## Clonar o projeto
+## 🔄 Clonar o projeto
 
 Abra o terminal e digite:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/projeto-nosql-iot.git
+git clone https://github.com/Adrianogvs/projeto-nosql-iot.git
 cd projeto-nosql-iot
 ```
 
 ---
 
-## Criar ambiente virtual e instalar as dependências
+## 📊 Criar ambiente virtual e instalar as dependências
 
 ```bash
 python -m venv .venv
@@ -40,26 +37,23 @@ pip install -r airflow/requirements.txt
 
 ---
 
-## Subir o Apache Airflow com Docker
+## 🚀 Subir o Apache Airflow com Docker
 
 ### 1. Rode os containers:
-
 ```bash
 docker-compose up -d
 ```
 
 ### 2. Acesse o Airflow no navegador:
-
 ```
 http://localhost:8080
 ```
-
 - **Usuário**: `admin`
 - **Senha**: `admin`
 
 ---
 
-## Estrutura de Pastas
+## 📁 Estrutura de Pastas
 
 ```bash
 projeto-nosql-iot/
@@ -100,7 +94,7 @@ projeto-nosql-iot/
 
 ---
 
-## Fluxo do Pipeline de Dados IoT
+## 🔄 Fluxo do Pipeline de Dados IoT
 
 A imagem abaixo representa todo o fluxo do projeto, desde a simulação dos dados até a análise final dos sensores:
 
@@ -108,7 +102,7 @@ A imagem abaixo representa todo o fluxo do projeto, desde a simulação dos dado
 
 ---
 
-## Arquitetura do Projeto
+## 🛠️ Arquitetura do Projeto
 
 A imagem abaixo resume a arquitetura geral do projeto `projeto-nosql-iot`, desde a simulação dos sensores IoT até a visualização dos dados:
 
@@ -116,17 +110,16 @@ A imagem abaixo resume a arquitetura geral do projeto `projeto-nosql-iot`, desde
 
 ---
 
-
-## Executar o pipeline (via Airflow)
+## ⏰ Executar o pipeline (via Airflow)
 
 1. Acesse o navegador em `http://localhost:8080`
 2. Ative a DAG `pipeline_iot_nosql`
 3. Clique no botão ▶️ para rodar manualmente
-4. Veja o gráfico com as etapas:
+4. Veja o gráfico com as etapas
 
 ---
 
-## Executar manualmente pelo terminal (sem Airflow)
+## ⚖️ Executar manualmente pelo terminal (sem Airflow)
 
 ```bash
 # Rodar o pipeline completo com Python:
@@ -135,7 +128,7 @@ python src/pipeline.py
 
 ---
 
-## Rodar os testes
+## 🔧 Rodar os testes
 
 ```bash
 # Windows
@@ -147,62 +140,63 @@ PYTHONPATH=. pytest tests/
 
 ---
 
-## Como o Projeto Foi Construído (Etapas)
+## 📅 Integração Contínua (CI) com GitHub Actions
+
+Este projeto possui uma esteira de CI implementada com GitHub Actions que executa automaticamente:
+
+- Instalação de dependências
+- Execução dos scripts ETL (`gerar_dados_json.py`, `extracao.py`, `transformacao.py`, `carga.py`)
+- Execução dos testes unitários com `pytest`
+- Validação do repositório a cada `push` ou `pull request` na branch `main`
+
+> Veja os resultados na aba **Actions** do repositório
+
+---
+
+## ⚖️ Como o Projeto Foi Construído (Etapas)
 
 ### 1. Planejamento da Arquitetura
-- Definimos uma estrutura baseada em extração, transformação e carga (ETL/ELT).
-- Escolhemos o Apache Airflow para orquestrar e Docker para facilitar a implantação.
+- Estrutura baseada em ETL (extração, transformação e carga)
+- Apache Airflow como orquestrador, Docker como infraestrutura
 
 ### 2. Simulação de Dados IoT
-- Criado um script em `airflow/scripts/gerar_dados_json.py` que simula sensores de bombas e compressores em plataformas offshore.
-- Esse script gera um arquivo JSON com 50 registros.
+- Script `gerar_dados_json.py` simula sensores de bombas e compressores
 
 ### 3. Construção do Pipeline
-- **Extração** (`src/extracao.py`): Lê o JSON simulado e converte para DataFrame.
-- **Transformação** (`src/transformacao.py`): Limpeza, conversão de tipos e normalização.
-- **Carga** (`src/carga.py`): Salva os dados em formato Parquet no diretório `data/lake/`.
-- **Orquestração com DAG Airflow**: Criamos a DAG `dag_pipeline.py` que chama os scripts em ordem.
+- **Extração** (`extracao.py`): JSON para DataFrame
+- **Transformação** (`transformacao.py`): limpeza, tipos, normalização
+- **Carga** (`carga.py`): salva em Parquet no `data/lake/`
+- **DAG Airflow**: controla a ordem e dependências com `dag_pipeline.py`
 
-### 4. Contêinerização com Docker
-- Criado `docker-compose.yml` com os serviços: PostgreSQL, Webserver, Scheduler e Init para Airflow.
-- Montadas as pastas `./src`, `./data`, `./airflow` como volumes no contêiner.
+### 4. Contêners com Docker
+- `docker-compose.yml` sobe os serviços: Airflow (webserver, scheduler), PostgreSQL (opcional)
 
-### 5. Validação com Testes
-- Criado `tests/test_transformacao.py` usando `pytest` para validar a transformação dos dados.
+### 5. Testes Automatizados
+- `pytest` em `tests/test_transformacao.py`
 
-### 6. Análise com Jupyter Notebook
-- Criado `notebooks/exploracao_inicial.ipynb`.
-- Leitura do Parquet final e geração de gráficos com `matplotlib` e `seaborn`.
+### 6. Análise de KPIs com Jupyter
+- `exploracao_inicial.ipynb` com pandas, matplotlib, seaborn
 
 ---
 
-## Análise que Simula o desempenho dos Sensores IoT que Monitoram Bombas e Compressores em Plataformas Offshore - Petrobras
+## 📊 Análise de Desempenho dos Sensores IoT
 
-### Contexto
-Essa análise simula a atuação de sensores inteligentes em plataformas offshore, monitorando bombas e compressores. A análise tem como base os dados transformados e salvos no formato Parquet (`data/lake/sensores_lake.parquet`) após o pipeline.
+Simula sensores monitorando bombas e compressores em plataformas offshore.
+Baseados nos arquivos `.parquet`, analisamos:
 
-Com os dados estruturados, utilizamos Python + Pandas para visualizar e entender os seguintes KPIs:
 - Distribuição por tipo de sensor
-- Médias e desvios dos valores capturados
-- Evolução dos sensores ao longo do tempo
-- Detecção de anomalias ou valores fora do padrão
+- Médias e desvios
+- Evolução temporal
+- Anomalias detectadas
 
-### Exemplos de Análises Geradas
-- Gráfico de linha para temperatura ao longo do tempo
-- Boxplot comparando valores de sensores
-- Histogramas por tipo de sensor
-- Contagem de sensores por tipo
+Ferramentas usadas:
+- `pandas`, `matplotlib`, `seaborn`
 
-### Ferramentas
-- `pandas`
-- `matplotlib`
-- `seaborn`
-
-> Você pode executar a análise abrindo o Jupyter Notebook em `notebooks/exploracao_inicial.ipynb`
+Notebook: `notebooks/exploracao_inicial.ipynb`
 
 ---
 
-## Prints do Funcionamento
+## 📸 Prints do Funcionamento
 
 ### Docker Desktop com os containers ativos:
 ![docker](./img/docker_containers.png)
@@ -212,21 +206,22 @@ Com os dados estruturados, utilizamos Python + Pandas para visualizar e entender
 
 ---
 
-## Possíveis Evoluções
+## 📊 Possíveis Evoluções Futuras
 
 - Integração com MongoDB Atlas real
-- Deploy na nuvem (S3 / Azure Blob)
-- Visualização com Streamlit ou Power BI
-- Kafka para streaming de dados
+- Deploy do Data Lake em S3 ou Azure Blob Storage
+- Dashboard com Streamlit ou Power BI
+- Processamento em tempo real com Apache Kafka
+- CD para deploy automatizado com Render ou EC2
 
 ---
 
-## Autor
+## 👤 Autor
 
-**Adriano Vilela**\
-Engenheiro de Dados em formação | Pythonista em construção\
+**Adriano Vilela**  
+Engenheiro de Dados em formação | Pythonista em construção  
 [LinkedIn](https://linkedin.com/in/adrianogvs) • [GitHub](https://github.com/Adrianogvs)
 
 ---
 
-Pronto! Agora é só apertar o play na DAG e ver a mágia acontecer!
+Pronto! Agora é só apertar o play na DAG e ver a mágia acontecer! 🚀
