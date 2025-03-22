@@ -129,6 +129,61 @@ PYTHONPATH=. pytest tests/
 
 ---
 
+## Como o Projeto Foi Construído (Etapas)
+
+### 1. Planejamento da Arquitetura
+- Definimos uma estrutura baseada em extração, transformação e carga (ETL/ELT).
+- Escolhemos o Apache Airflow para orquestrar e Docker para facilitar a implantação.
+
+### 2. Simulação de Dados IoT
+- Criado um script em `airflow/scripts/gerar_dados_json.py` que simula sensores de bombas e compressores em plataformas offshore.
+- Esse script gera um arquivo JSON com 50 registros.
+
+### 3. Construção do Pipeline
+- **Extração** (`src/extracao.py`): Lê o JSON simulado e converte para DataFrame.
+- **Transformação** (`src/transformacao.py`): Limpeza, conversão de tipos e normalização.
+- **Carga** (`src/carga.py`): Salva os dados em formato Parquet no diretório `data/lake/`.
+- **Orquestração com DAG Airflow**: Criamos a DAG `dag_pipeline.py` que chama os scripts em ordem.
+
+### 4. Contêinerização com Docker
+- Criado `docker-compose.yml` com os serviços: PostgreSQL, Webserver, Scheduler e Init para Airflow.
+- Montadas as pastas `./src`, `./data`, `./airflow` como volumes no contêiner.
+
+### 5. Validação com Testes
+- Criado `tests/test_transformacao.py` usando `pytest` para validar a transformação dos dados.
+
+### 6. Análise com Jupyter Notebook
+- Criado `notebooks/exploracao_inicial.ipynb`.
+- Leitura do Parquet final e geração de gráficos com `matplotlib` e `seaborn`.
+
+---
+
+## Análise que Simula o desempenho dos Sensores IoT que Monitoram Bombas e Compressores em Plataformas Offshore - Petrobras
+
+### Contexto
+Essa análise simula a atuação de sensores inteligentes em plataformas offshore, monitorando bombas e compressores. A análise tem como base os dados transformados e salvos no formato Parquet (`data/lake/sensores_lake.parquet`) após o pipeline.
+
+Com os dados estruturados, utilizamos Python + Pandas para visualizar e entender os seguintes KPIs:
+- Distribuição por tipo de sensor
+- Médias e desvios dos valores capturados
+- Evolução dos sensores ao longo do tempo
+- Detecção de anomalias ou valores fora do padrão
+
+### Exemplos de Análises Geradas
+- Gráfico de linha para temperatura ao longo do tempo
+- Boxplot comparando valores de sensores
+- Histogramas por tipo de sensor
+- Contagem de sensores por tipo
+
+### Ferramentas
+- `pandas`
+- `matplotlib`
+- `seaborn`
+
+> Você pode executar a análise abrindo o Jupyter Notebook em `notebooks/exploracao_inicial.ipynb`
+
+---
+
 ## Prints do Funcionamento
 
 ### Docker Desktop com os containers ativos:
@@ -157,4 +212,3 @@ Engenheiro de Dados em formação | Pythonista em construção\
 ---
 
 Pronto! Agora é só apertar o play na DAG e ver a mágia acontecer!
-
