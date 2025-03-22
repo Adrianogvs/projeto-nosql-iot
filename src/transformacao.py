@@ -1,59 +1,52 @@
 import pandas as pd
 from pathlib import Path
 import sys
+import logging
 
-# Evitar problemas de codificação no Windows
+# Configura logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Definir encoding UTF-8 para evitar erro no Windows
 sys.stdout.reconfigure(encoding='utf-8')
 
-# Caminhos dos arquivos
-PASTA_PROCESSADOS = Path("data/processed/")
+# Caminhos
+PASTA_PROCESSADOS = Path("/opt/airflow/data/processed/")
 CAMINHO_CSV = PASTA_PROCESSADOS / "sensores_extraidos.csv"
-CAMINHO_PARQUET = PASTA_PROCESSADOS / "sensores_extraidos.parquet"
 CAMINHO_CSV_TRANSFORMADO = PASTA_PROCESSADOS / "sensores_transformados.csv"
 CAMINHO_PARQUET_TRANSFORMADO = PASTA_PROCESSADOS / "sensores_transformados.parquet"
 
 def carregar_dados():
-    """Carrega os dados extraídos do CSV para um DataFrame."""
+    """Carrega o arquivo CSV extraído"""
     if not CAMINHO_CSV.exists():
+        logger.error(f"[ERRO] Arquivo {CAMINHO_CSV} não encontrado para transformação.")
         raise FileNotFoundError(f"[ERRO] Arquivo {CAMINHO_CSV} não encontrado!")
 
     df = pd.read_csv(CAMINHO_CSV)
-    print(f"[OK] Dados carregados: {df.shape[0]} linhas, {df.shape[1]} colunas.")
+    logger.info(f"[OK] {df.shape[0]} registros carregados do CSV.")
     return df
 
 def transformar_dados(df):
-    """Aplica regras de transformação e limpeza no DataFrame."""
-    
-    # Remover registros com valores nulos
-    df.dropna(inplace=True)
+    """Aplica transformações no DataFrame"""
+    df = df.dropna()  # Remove nulos
+    df['timestamp'] = pd.to_datetime(df['timestamp'])  # Converte timestamp
+    df['tipo_sensor'] = df['tipo_sensor'].str.lower().str.strip()  # Padroniza texto
+    df['valor'] = df['valor'].astype(float)  # Garante tipo numérico
 
-    # Padronizar os nomes dos sensores para minúsculas
-    df["tipo_sensor"] = df["tipo_sensor"].str.lower()
-
-    # Converter valores para float
-    df["valor"] = pd.to_numeric(df["valor"], errors="coerce")
-
-    # Transformar o timestamp em formato datetime
-    df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
-
-    # Remover registros inválidos
-    df.dropna(subset=["valor", "timestamp"], inplace=True)
-
-    print(f"[OK] Transformação aplicada: {df.shape[0]} registros finais.")
+    logger.info(f"[OK] Dados transformados com sucesso. Total: {df.shape[0]} linhas.")
     return df
 
-def salvar_dados_transformados(df):
-    """Salva o DataFrame transformado em CSV e Parquet."""
-    PASTA_PROCESSADOS.mkdir(parents=True, exist_ok=True)
-
+def salvar_dados(df):
+    """Salva os dados transformados"""
     df.to_csv(CAMINHO_CSV_TRANSFORMADO, index=False)
-    df.to_parquet(CAMINHO_PARQUET_TRANSFORMADO, index=False)
+    df.to_parquet(CAMINHO_PARQUET_TRANSFORMADO, index=False, engine='pyarrow')
 
-    print(f"[SALVO] Arquivo CSV: {CAMINHO_CSV_TRANSFORMADO}")
-    print(f"[SALVO] Arquivo Parquet: {CAMINHO_PARQUET_TRANSFORMADO}")
+    logger.info(f"[SALVO] CSV transformado: {CAMINHO_CSV_TRANSFORMADO}")
+    logger.info(f"[SALVO] Parquet transformado: {CAMINHO_PARQUET_TRANSFORMADO}")
 
 if __name__ == "__main__":
-    # Executando a transformação
+    logger.info("Iniciando transformação dos dados...")
     df_bruto = carregar_dados()
-    df_tratado = transformar_dados(df_bruto)
-    salvar_dados_transformados(df_tratado)
+    df_transformado = transformar_dados(df_bruto)
+    salvar_dados(df_transformado)
+    logger.info("Transformação finalizada com sucesso!")

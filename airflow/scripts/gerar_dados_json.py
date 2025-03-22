@@ -9,7 +9,7 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # Configurações
-NUM_REGISTROS = 50
+NUM_REGISTROS = 1000
 TIPOS_SENSORES = ["temperatura", "umidade", "pressao"]
 UNIDADES = {"temperatura": "C", "umidade": "%", "pressao": "Pa"}
 PLATAFORMAS = ["Plataforma A", "Plataforma B", "Plataforma C"]
