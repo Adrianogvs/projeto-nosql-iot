@@ -99,13 +99,23 @@ projeto-nosql-iot/
 
 ---
 
-## 🗺️ Fluxo do Pipeline de Dados IoT
+## Fluxo do Pipeline de Dados IoT
 
 A imagem abaixo representa todo o fluxo do projeto, desde a simulação dos dados até a análise final dos sensores:
 
 ![Fluxo do Pipeline](./img/fluxo.png)
 
 ---
+
+## Arquitetura do Projeto
+
+A imagem abaixo resume a arquitetura geral do projeto `projeto-nosql-iot`, desde a simulação dos sensores IoT até a visualização dos dados:
+
+![Arquitetura do Projeto](./img/fluxograma_iot.png)
+
+---
+
+
 ## Executar o pipeline (via Airflow)
 
 1. Acesse o navegador em `http://localhost:8080`
