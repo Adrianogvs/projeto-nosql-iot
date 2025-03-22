@@ -6,7 +6,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Caminhos das pastas e arquivos
-PASTA_PROCESSED = Path("data/processed/")
+PASTA_PROCESSED = Path("/opt/airflow/data/processed/")
 PASTA_LAKE = Path("data/lake/")
 
 CAMINHO_CSV_TRANSFORMADO = PASTA_PROCESSED / "sensores_transformados.csv"
