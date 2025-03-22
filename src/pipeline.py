@@ -6,18 +6,18 @@ def executar_script(script):
     resultado = subprocess.run(["python", script], capture_output=True, text=True)
 
     if resultado.returncode == 0:
-        print(f"✅ {script} executado com sucesso!")
-        print(resultado.stdout)  # Exibe a saída do script
+        print(f" {script} executado com sucesso!")
+        print(resultado.stdout)
     else:
         print(f"❌ Erro ao executar {script}!")
-        print(resultado.stderr)  # Exibe o erro
+        print(resultado.stderr)
         exit(1)
 
 if __name__ == "__main__":
     print("🚀 Iniciando Pipeline de Dados NoSQL")
 
     # Passo 1: Gerar os dados simulados
-    executar_script("scripts/gerar_dados_json.py")
+    executar_script("airflow/scripts/gerar_dados_json.py")  # <- CORRIGIDO AQUI
 
     # Passo 2: Extrair os dados do JSON
     executar_script("src/extracao.py")
