@@ -17,7 +17,7 @@ if __name__ == "__main__":
     print("🚀 Iniciando Pipeline de Dados NoSQL")
 
     # Passo 1: Gerar os dados simulados
-    executar_script("airflow/scripts/gerar_dados_json.py")  # <- CORRIGIDO AQUI
+    executar_script("airflow/scripts/gerar_dados_json.py") 
 
     # Passo 2: Extrair os dados do JSON
     executar_script("src/extracao.py")

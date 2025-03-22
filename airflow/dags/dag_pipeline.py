@@ -37,6 +37,6 @@ with DAG(
     )
 
 
-    gerar_json >> extrair >> transformar >> carregar
+    gerar_json >> extrair >> transformar >> carregar 
 
 
