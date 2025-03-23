@@ -1,7 +1,7 @@
 # Projeto NoSQL IoT - Engenharia de Dados com Apache Airflow + Docker
 ![CI](https://github.com/Adrianogvs/projeto-nosql-iot/actions/workflows/python-pipeline.yml/badge.svg?branch=main)
 
-Este projeto simula um caso real da Petrobras: sensores IoT monitoram bombas e compressores em plataformas offshore. Esses dados chegam em JSON, são tratados com Python e orquestrados com Apache Airflow, e salvos como Parquet para análise.
+Este projeto simula um caso real de uma empresa do setor de Óleo e Gás: sensores IoT monitoram bombas e compressores em plataformas offshore. Esses dados chegam em JSON, são tratados com Python e orquestrados com Apache Airflow, e salvos como Parquet para análise.
 
 ---
 
